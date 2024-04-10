@@ -1,14 +1,13 @@
-:root {
-  --main-color: rgb(4, 191, 204);
-  --secound-bg: rgb(202, 202, 202);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 body {
   margin: 0;
+  background-color: #e2e8f0;
+  font-family: lato;
+  color: white;
 }
 .container {
   display: grid;
-  grid-template: 1fr 2fr 2fr / 1fr 3fr 1fr;
+  grid-template: 1fr 2fr 2fr / minmax(50px, 300px) 3fr 1fr;
   width: 100%;
   height: 100vh;
   grid-template-areas:
@@ -17,21 +16,56 @@ body {
 }
 .header {
   grid-area: header;
-  background-color: #fff;
+  background-color: #b8b8b8;
 }
 .sidebar {
   grid-area: sidebar;
-  background-color: var(--main-color);
+  background-color: #1992d4;
+  padding: 10px 10px;
+  font-weight: bold;
 }
 .your-projects {
   grid-area: projects;
-  background-color: var(--secound-bg);
 }
 .announcements {
   grid-area: announcements;
-  background-color: var(--secound-bg);
 }
 .trending {
   grid-area: trending;
-  background-color: var(--secound-bg);
 }
+svg {
+  fill: white;
+}
+/* dashboard styling  start*/
+.dashboardtitle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  font-size: 1.7rem;
+}
+.dashboardtitle svg {
+  height: 50px;
+  margin-right: 10px;
+}
+.dashboardtitle p {
+  margin: 0;
+}
+.sidebaritem {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.sidebaritem svg {
+  height: 30px;
+  margin-right: 10px;
+}
+#communities {
+  margin-bottom: 50px;
+}
+/* dashboard styling  end*/
+/* header styling  start*/
+.header svg {
+  height: 30px;
+}
+/* header styling end*/
