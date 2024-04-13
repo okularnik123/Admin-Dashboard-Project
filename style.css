@@ -30,6 +30,12 @@ body {
 }
 .your-projects {
   grid-area: projects;
+  color: #000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
 .announcements {
   grid-area: announcements;
@@ -133,3 +139,28 @@ svg {
   margin-left: auto;
 }
 /* header styling end*/
+/* projects section styling start*/
+.projectdiv {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 6px 13px 22px -14px rgba(66, 68, 90, 1);
+  padding: 15px 20% 10px 20px;
+  border-left: #f0b429 solid 6px;
+  position: relative;
+}
+.project-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.project-controls {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+.project-controls svg {
+  fill: black;
+  height: 25px;
+  margin-right: 10px;
+}
+/* projects section styling end*/
