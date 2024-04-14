@@ -31,11 +31,8 @@ body {
 .your-projects {
   grid-area: projects;
   color: #000;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 20px;
   padding: 20px;
+  padding-top: 0;
 }
 .announcements {
   grid-area: announcements;
@@ -140,6 +137,16 @@ svg {
 }
 /* header styling end*/
 /* projects section styling start*/
+.your-projects > p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.projects-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
 .projectdiv {
   background-color: #fff;
   border-radius: 6px;
@@ -160,7 +167,7 @@ svg {
 }
 .project-controls svg {
   fill: black;
-  height: 25px;
+  height: 25git px;
   margin-right: 10px;
 }
 /* projects section styling end*/
